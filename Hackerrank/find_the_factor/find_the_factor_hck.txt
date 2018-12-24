@@ -1,0 +1,65 @@
+Determine all positive integer values that evenly divide into a number, its factors. 
+Return the pth element of your list, sorted ascending. If there is no pth element, return 0.
+
+ 
+
+For example, given the number n = 20, its factors are {1,2,4,5,10,20}. Using 1-based indexing if p = 3, return 4. If p > 6, return 0.
+
+ 
+Function Description 
+
+Complete the function pthFactor in the editor below. The function should return a long integer value of the pth integer factor of n.
+
+ 
+pthFactor has the following parameter(s):
+
+    n:  an integer
+    p:  an integer
+
+ 
+
+Constraints
+
+    1 ≤ n ≤ 1015
+    1 ≤ p ≤ 109
+
+ 
+Input Format for Custom Testing
+
+Input from stdin will be processed as follows and passed to the function.
+
+ 
+
+The first line contains an integer n, the number to factor.
+
+The second line contains an integer p, the 1-based index of the factor to return.
+
+ 
+Sample Case 0
+
+Sample Input 0
+
+10
+3
+
+Sample Output 0
+
+5
+
+Explanation 0
+
+Factoring n = 10 we get {1, 2, 5, 10}. We then return the p = 3rd factor as our answer.
+Sample Case 1
+
+Sample Input 1
+
+10
+5
+
+Sample Output 1
+
+0
+
+Explanation 1
+
+Factoring n = 10 we get {1, 2, 5, 10}. There are only 4 factors and p = 5. We return 0 as our answer.
